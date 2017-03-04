@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+    <title>ITSA</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .masthead {
+            height: 100vh;
+        }
+
+        #title {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            color: white;
+            font-size: 3em;
+        }
+
+        #content {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        #icon1
+        {
+            animation-name: ani;
+            -webkit-animation-name:ani;
+            animation-duration: 5s;
+            -webkit-animation-duration:5s;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count:infinite;
+        }
+        @keyframes ani
+        {
+            0%   {color: white;}
+            25%  {color: #06829B;}
+            50%  {color: white;}
+            75%  {color:#06829B;}
+            100% {color:white;}
+        }
+        @-webkit-keyframes ani
+        {
+            0%   {color: white;}
+            25%  {color: #06829B;}
+            50%  {color: white;}
+            75%  {color:#06829B;}
+            100% {color:white;}
+        }
+        #div1
+        {
+            height: 200px;
+            animation-name: movdiv;
+
+        }
+        @keyframes movdiv
+        {
+            0%{top:0;}
+            25%{ top:100px; }
+            50%{top:0;}
+            100%{ top:100px; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Wrap all page content here -->
+    <header class="masthead">
+        <div id="title">
+            <h1 class="text-center" style="font-size:70px;">ITSA</h1>
+            <span>Information Technology Student Association</span>
+            <div id="div1">
+                <p>
+                    <a href="#text1" id="icon1" style="color: white; top:150px;">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- Begin Navbar -->
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" id="navbarLeft">
+                    <li><a href="./faculty.html">Faculty</a></li>
+                    <li><a href="./core.html">Committee</a></li>
+                    <li><a href="./workshop.html">Workshop</a></li>
+                    <li><a href="./achievements.html">Achievements</a></li>
+                </ul>
+                <ul class="nav navbar-nav" id="navbarRight">
+                    <li><a href="./placements.html">Placements</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./developers.html">Developers</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.navbar -->
+    </nav>
+    <a href="index.html">
+        <div id="ITSA"></div>
+    </a>
+    <!-- Begin Body -->
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-justify" id="text1">
+                    The Information Technology Students Association first came into being in 2004 as a group of students coming together to represent the interest of the IT department and enrich their 4 years in engineering. The association has evolved over the years with
+                    numerous ideas being incorporated every year, setting milestones for the following batches to come. Now in 2013 a group of 10 individuals with common interest for their department, has taken up the responsibilities of making a difference
+                    to the department that has become a part of their lives.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/itsa-logo.png" width="100%">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="text-muted">Copyright &copy; <span id="currentYear"></span> ITSA, Sardar Patel Institute of Technology</p>
+            <div><span class="text-muted">Follow us at:</span>
+                <a href=""><span class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></span></a>
+            </div>
+        </div>
+    </footer>
+    <ul class="nav pull-right scroll-top hidden-xs">
+        <li><a href="#" tabindex="-1" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+    </ul>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/indexjs.js"></script>
+</body>
+
+</html>
